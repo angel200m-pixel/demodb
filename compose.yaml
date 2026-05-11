@@ -1,0 +1,9 @@
+# https://github.com/docker/awesome-compose
+services:
+  server:
+    build:
+      context: .
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_MONGODB_URI=mongodb+srv://mayonesa:apvx@cluster0.jpdftgu.mongodb.net/test?retryWrites=true&w=majority
