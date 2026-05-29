@@ -1,20 +1,19 @@
 package com.example.demo.service;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.model.Product;
-import com.example.demo.repository.ProductRepository;
+import com.example.demo.model.Review;
+import com.example.demo.repository.ReviewRepository;
 
 @Service
-public class ProductService {
-    
-    @Autowired
-    private ProductRepository repo;
+public class ReviewService {
 
-    public List<Product> getAll() {
-        return repo.findAll();
+    @Autowired
+    private ReviewRepository repository;
+
+    public List<Review> getAll() {
+        return repository.findAll();
     }
 }
