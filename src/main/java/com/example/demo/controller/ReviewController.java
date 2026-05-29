@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.model.Review;
 import com.example.demo.service.ReviewService;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("reviews")
 public class ReviewController {
